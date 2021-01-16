@@ -1,7 +1,7 @@
 package com.ishara.odering_system;
 
-import com.ishara.odering_system.exeptions.BrandNotAvailableException;
-import com.ishara.odering_system.exeptions.ItemNotAvailableException;
+import com.ishara.odering_system.exeptions.*;
+
 
 public class Oder {
 	
@@ -10,7 +10,7 @@ public class Oder {
 	            Brand brand = new Brand();
 	            brand.checkRequstedBrand();
 	        } catch (BrandNotAvailableException e) {
-	            throw new ItemNotAvailableException("Couse by getOder" , e); 
+	            throw new OderNotCompletedException("Requsted oder Can not Completed" , e); 
 	        }
 	        
 	 }
