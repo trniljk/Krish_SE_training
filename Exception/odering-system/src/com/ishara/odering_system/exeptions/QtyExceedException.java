@@ -6,7 +6,7 @@ public class QtyExceedException extends Exception{
 		}
 		public QtyExceedException(String messgae) {
 			super(messgae);
-			// TODO Auto-generated constructor stub
+			
 		}
 
 }

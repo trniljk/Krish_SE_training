@@ -25,18 +25,21 @@ public class Store {
 		}
 	}
 	
-	public void getInventry(String itemCode) {
+	public void showRemainQtyOf(String itemCode) {
 		
 		int itemCount;
 		try {
-			File inventryFile = new File("C:\\Users\\Night_King\\Documents\\eclipse-workspace\\odering-system\\resources\\Inventry.txt");
+			File inventryFile = new File("C:\\Users\\Night_King\\Documents\\projects\\Virtusa-LP-Training-Extented\\Exception\\odering-system\\resources\\Inventry.txt");
 			
 			Scanner scanFile = new Scanner(inventryFile); 
 			
 			itemCount = Integer.parseInt(scanFile.nextLine());
 			System.out.println("Vailable Count of "+itemCode+ "-" + itemCount);
 		}
-		catch (Exception e)
+		catch (FileNotFoundException e){
+			System.out.println("Check Exception -" + e);			
+		}
+		catch (NumberFormatException e)
 		{
 			System.out.println("Uncheck Exception -" + e);
 		}			
