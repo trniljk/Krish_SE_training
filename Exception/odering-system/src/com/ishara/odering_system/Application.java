@@ -12,18 +12,11 @@ public class Application {
             newOder.getOder();
         } catch (Exception e) {
         	
-           e.printStackTrace();       
+           System.out.println("Oder Can not complete"+ e);       
         }
 		
+		
 			
-		Store store = new Store();
-		store.previewInventory();		
-		store.showRemainQtyOf("R123");
-		try {
-			store.setInventory("R123",2000);
-		} catch (RuntimeException e) {
-			System.out.println(e);
-		}		
 	}
 
 }

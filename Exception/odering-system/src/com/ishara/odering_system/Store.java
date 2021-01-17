@@ -10,6 +10,7 @@ import javax.management.RuntimeErrorException;
 public class Store {
 	
 	
+	public static int maxStorageForItem = 1000;
 	
 	void checkAvailableQty() throws Exception{
         
@@ -19,9 +20,9 @@ public class Store {
 	public void previewInventory(){
 		try {
 			FileInputStream fill = null;
-            fill= new FileInputStream("E:/myfile.txt");  
+            fill= new FileInputStream("E:/inventory.txt");  
 		} catch (FileNotFoundException e) {
-			System.out.println("Check Exception -" + e);
+			System.out.println("Check Exception ::" + e);
 		}
 	}
 	
@@ -37,27 +38,24 @@ public class Store {
 			System.out.println("Vailable Count of "+itemCode+ "-" + itemCount);
 		}
 		catch (FileNotFoundException e){
-			System.out.println("Check Exception -" + e);			
+			System.out.println(e);			
 		}
-		catch (NumberFormatException e)
-		{
-			System.out.println("Uncheck Exception -" + e);
-		}			
+				
 	}
-	public void setInventory(String itemCode,int qty) throws  RuntimeException{
+	public void setInventoryOf(String itemCode,int qty){
 		
 		try {
 			
-			if(qty> 1000) {
+			if(qty> Store.maxStorageForItem) {
 				throw new InsufficientStorageException();
 			}
 			
 		} catch (InsufficientStorageException e) {
 			
-			throw new RuntimeException("Exception wrapping -"+ e);
-			// TODO: handle exception
+			throw new RuntimeException(e);
+			
 		}
-		// TODO Auto-generated method stub
+		
 
 	}
 	
