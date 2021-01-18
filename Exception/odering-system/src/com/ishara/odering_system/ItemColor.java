@@ -4,7 +4,7 @@ import com.ishara.odering_system.exeptions.*;
 
 public class ItemColor {
 	
-	void checkRequstedColor() throws Exception{
+	void checkRequstedColor() throws ColorNotAvailableException{
         try {
             Store requstedQty = new Store();
             requstedQty.checkAvailableQty();            

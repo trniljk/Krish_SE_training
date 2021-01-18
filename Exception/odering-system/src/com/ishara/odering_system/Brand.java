@@ -4,7 +4,7 @@ import com.ishara.odering_system.exeptions.*;
 
 public class Brand {
 	
-	public void checkRequstedBrand() throws Exception{
+	public void checkRequstedBrand() throws BrandNotAvailableException{
         try {
             ItemColor itemColor = new ItemColor();
             itemColor.checkRequstedColor();
@@ -13,5 +13,15 @@ public class Brand {
         }
 
     } 
-
+	
+	public int cccc() throws BrandNotAvailableException{
+		
+		int x = 0;
+		try {
+			return x;
+		} catch (Exception e) {
+			return x;
+		}
+		
+	}
 }

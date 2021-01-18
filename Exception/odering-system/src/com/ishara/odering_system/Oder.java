@@ -5,7 +5,7 @@ import com.ishara.odering_system.exeptions.*;
 
 public class Oder {
 	
-	 public void getOder() throws Exception{
+	 public void getOder() throws OderNotCompletedException{
 	        try {
 	            Brand brand = new Brand();
 	            brand.checkRequstedBrand();

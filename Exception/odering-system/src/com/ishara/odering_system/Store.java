@@ -12,21 +12,21 @@ public class Store {
 	
 	public static int maxStorageForItem = 1000;
 	
-	void checkAvailableQty() throws Exception{
+	void checkAvailableQty() throws QtyExceedException{
         
             throw new QtyExceedException("Requsted Qty not available");        
     }
 	
-	public void previewInventory(){
+	public void previewInventory() throws InventoryNotFoundException{
 		try {
 			FileInputStream fill = null;
             fill= new FileInputStream("E:/inventory.txt");  
 		} catch (FileNotFoundException e) {
-			System.out.println("Check Exception ::" + e);
+			throw new InventoryNotFoundException("Can Not Found the Inventory",e);
 		}
 	}
 	
-	public void showRemainQtyOf(String itemCode) {
+	public void showRemainQtyOf(String itemCode) throws  InventoryNotFoundException{
 		
 		int itemCount;
 		try {
@@ -35,10 +35,10 @@ public class Store {
 			Scanner scanFile = new Scanner(inventryFile); 
 			
 			itemCount = Integer.parseInt(scanFile.nextLine());
-			System.out.println("Vailable Count of "+itemCode+ "-" + itemCount);
+			System.out.println("Remain Count of "+itemCode+ "-" + itemCount);
 		}
 		catch (FileNotFoundException e){
-			System.out.println(e);			
+			throw new InventoryNotFoundException("Can Not Found the Inventory",e);			
 		}
 				
 	}
@@ -52,7 +52,7 @@ public class Store {
 			
 		} catch (InsufficientStorageException e) {
 			
-			throw new RuntimeException(e);
+			throw new SetInvetoryException("Set items for inventory Fail",e);
 			
 		}
 		

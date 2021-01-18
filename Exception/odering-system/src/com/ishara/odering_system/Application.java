@@ -10,12 +10,10 @@ public class Application {
 		try {
             Oder newOder = new Oder();
             newOder.getOder();
-        } catch (Exception e) {
+        } catch (OderNotCompletedException e) {
         	
-           System.out.println("Oder Can not complete"+ e);       
+           e.printStackTrace();  
         }
-		
-		
 			
 	}
 
