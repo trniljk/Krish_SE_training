@@ -9,7 +9,7 @@ public class Brand {
             ItemColor itemColor = new ItemColor();
             itemColor.checkRequstedColor();
         } catch (ColorNotAvailableException e) {
-            throw new BrandNotAvailableException("Couse by checkAvailableBrand" , e); 
+            throw new BrandNotAvailableException("Requsted brand not Available" , e); 
         }
 
     } 

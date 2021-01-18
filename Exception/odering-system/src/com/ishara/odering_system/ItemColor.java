@@ -9,7 +9,7 @@ public class ItemColor {
             Store requstedQty = new Store();
             requstedQty.checkAvailableQty();            
         } catch (QtyExceedException e) {
-            throw new ColorNotAvailableException("Couse by checkRequstedColor" , e); 
+            throw new ColorNotAvailableException("Requsted color not Available for selected brand" , e); 
         } 
     }
 }
