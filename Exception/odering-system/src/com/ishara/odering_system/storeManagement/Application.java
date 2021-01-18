@@ -8,23 +8,23 @@ public class Application {
 	public static void main(String[] args) {
 		Store store = new Store();
 		
-			//try {
+			try {
 				
-			//	store.previewInventory();
-			//} catch (InventoryNotFoundException e) {
+				store.previewInventory();
+			} catch (InventoryNotFoundException e) {
 				
-			//	System.out.println(e);
-			//}
+				System.out.println(e);
+			}
 		
-			//try {
+			try {
 				
-			//	store.showRemainQtyOf("R123");
+				store.showRemainQtyOf("R123");
 				
-			//} catch (InventoryNotFoundException e) {
+			} catch (InventoryNotFoundException e) {
 				
-			//	System.out.println(e);	
+				System.out.println(e);	
 				
-			//} 
+			} 
 		
 			store.setInventoryOf("R123",2000);
 

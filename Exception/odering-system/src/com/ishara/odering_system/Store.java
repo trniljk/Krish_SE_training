@@ -22,7 +22,7 @@ public class Store {
 			FileInputStream fill = null;
             fill= new FileInputStream("E:/inventory.txt");  
 		} catch (FileNotFoundException e) {
-			throw new InventoryNotFoundException("Can Not Found the Inventory",e);
+			throw new InventoryNotFoundException("Can Not find the Inventory",e);
 		}
 	}
 	
@@ -38,7 +38,7 @@ public class Store {
 			System.out.println("Remain Count of "+itemCode+ "-" + itemCount);
 		}
 		catch (FileNotFoundException e){
-			throw new InventoryNotFoundException("Can Not Found the Inventory",e);			
+			throw new InventoryNotFoundException("Can Not find the Inventory",e);			
 		}
 				
 	}
