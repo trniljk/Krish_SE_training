@@ -1,6 +1,6 @@
 package com.ishara.odering_system.storeManagement;
 import com.ishara.odering_system.*;
-import com.ishara.odering_system.exeptions.InventoryNotFoundException;
+import com.ishara.odering_system.exeptions.*;
 
 
 public class Application {
@@ -8,25 +8,27 @@ public class Application {
 	public static void main(String[] args) {
 		Store store = new Store();
 		
-			try {
+			/*try {
 				
 				store.previewInventory();
 			} catch (InventoryNotFoundException e) {
 				
 				System.out.println(e);
 			}
-		
+		*/
 			try {
 				
 				store.showRemainQtyOf("R123");
 				
-			} catch (InventoryNotFoundException e) {
+			} catch (InventoryException e) {
 				
 				System.out.println(e);	
 				
 			} 
+			
+			
 		
-			store.setInventoryOf("R123",2000);
+			//store.setInventoryOf("R123",2000);
 
 	}
 

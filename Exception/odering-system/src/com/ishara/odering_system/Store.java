@@ -26,7 +26,7 @@ public class Store {
 		}
 	}
 	
-	public void showRemainQtyOf(String itemCode) throws  InventoryNotFoundException{
+	public void showRemainQtyOf(String itemCode) throws  InventoryException{
 		
 		int itemCount;
 		try {
@@ -39,6 +39,8 @@ public class Store {
 		}
 		catch (FileNotFoundException e){
 			throw new InventoryNotFoundException("Can Not find the Inventory",e);			
+		}catch (NumberFormatException e) {
+			throw new InvalidInventoryReadingException("Invalid Reading From Inventory",e);	
 		}
 				
 	}
