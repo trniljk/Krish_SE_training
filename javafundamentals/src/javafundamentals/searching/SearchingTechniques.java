@@ -7,7 +7,8 @@ public class SearchingTechniques {
 		int [] sortedArray = new SelectionSort(array).sortingArray();
 		BinarySearch search = new BinarySearch(sortedArray);
 		search.searching(5);
-
+		//BinarySearchTree tree =new BinarySearchTree();
+		//tree.printTree(tree.sortedArrayToBST(sortedArray, 0, array.length-1));
 	}
 
 }

@@ -16,6 +16,9 @@ public class TreeSetExample {
 		System.out.println(tree);
 		System.out.println("Contains " + "C#" + " " + tree.contains("C#"));
 		System.out.println("Last::"+tree.last());
+//		[C#, C++, Java, Python]
+//		Contains C# true
+//		Last::Python
 	}
 			
 
