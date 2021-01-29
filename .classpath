@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Desing Patterns/builder-desing-pattern/src"/>
+	<classpathentry kind="src" path="Desing Patterns/chain-of-responsibility-pattern/src"/>
+	<classpathentry kind="src" path="Desing Patterns/factorymethod-desing-pattern/src"/>
+	<classpathentry kind="src" path="Desing Patterns/prototype-design-pattern/src"/>
+	<classpathentry kind="src" path="Desing Patterns/singleton-design-pattern/src"/>
+	<classpathentry kind="src" path="ems/application"/>
+	<classpathentry kind="src" path="ems/employee"/>
+	<classpathentry kind="src" path="ems/manager"/>
+	<classpathentry kind="src" path="Exception/odering-system/src"/>
+	<classpathentry kind="src" path="javafundamentals/src"/>
+	<classpathentry kind="src" path="Number Reverse"/>
+	<classpathentry kind="output" path="Desing Patterns/builder-desing-pattern/bin"/>
+</classpath>
