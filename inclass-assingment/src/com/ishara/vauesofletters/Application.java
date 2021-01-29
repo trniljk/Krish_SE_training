@@ -12,9 +12,9 @@ public class Application {
 
 	    String inputWord = scanner.nextLine();
 		
-		String wordLowercase = inputWord.toLowerCase();
+		String wordLowerCase = inputWord.toLowerCase();
 		
-		char [] charArry = wordLowercase.toCharArray();
+		char [] charArry = wordLowerCase.toCharArray();
 		
 		int sumOfValues =0;
 	
