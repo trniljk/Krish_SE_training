@@ -1,16 +1,20 @@
+package com.ishara.vauesofletters;
+
 import java.util.Scanner;
 
 public class Application {
 
 	public static void main(String[] args) {
+		
+
 		Scanner scanner = new Scanner(System.in);
-	    System.out.println("Any Word");
+	    System.out.println("Enter Any Word");
 
 	    String inputWord = scanner.nextLine();
 		
 		String wordLowercase = inputWord.toLowerCase();
 		
-		char charArry [] = wordLowercase.toCharArray();
+		char [] charArry = wordLowercase.toCharArray();
 		
 		int sumOfValues =0;
 	
@@ -28,6 +32,8 @@ public class Application {
 			System.out.println("Enter word not contain letters");
 
 		}		
+
+
 	}
 
 }
