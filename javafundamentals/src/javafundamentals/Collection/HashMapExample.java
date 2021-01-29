@@ -20,6 +20,13 @@ public class HashMapExample {
 		System.out.println(personInformations.values());
 		System.out.println(personInformations.get(1));
 		
+//		{1=Suranga, 3=I, 100=Ishara}
+//		[1, 3, 100]
+//		1
+//		[Suranga, I, Ishara]
+//		Suranga
+
+		
 	}
 
 }

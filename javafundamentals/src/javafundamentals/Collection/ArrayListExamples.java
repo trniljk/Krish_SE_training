@@ -27,6 +27,7 @@ public class ArrayListExamples {
 			Integer integer = iterator.next();
 			System.out.print(integer+" ");			
 		}
+		
 		System.out.println();
 		
 		oddNumbers.add(4, 89);
@@ -42,6 +43,10 @@ public class ArrayListExamples {
 		}
 		System.out.println();
 		
+//		1 3 5 7 9 11 13 15 17 19 
+//		2 4 6 8 10 12 14 16 18 20 
+//		[1, 3, 5, 7, 89, 9, 11, 13, 15, 17, 19]
+//		89 19 17 15 13 11 9 7 5 3 1 
 		
 		
 	}

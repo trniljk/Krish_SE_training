@@ -23,6 +23,11 @@ public class HashSetExample {
 		}
 		System.out.println();
 		System.out.println(bikeSet.iterator().next());
+//		
+//				[TVS, Yamaha, Ducati, Honda]
+//				TVS Yamaha Ducati Honda 
+//				TVS
+
 		
 	}
 
